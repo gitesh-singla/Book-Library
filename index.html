@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="./book.png" class="book-icon">
+        <div>Library</div>
+    </div>
+
+    <div class="main">
+    </div>
+
+    <button class="add">+</button>
+    
+    <div class="addForm">
+        <div>Add a book!</div>
+        <form action="none">
+            <input type="text" name="title" id="title-input" placeholder="Title">
+            <input type="text" name="author" id="author-input" placeholder="Author">
+            <input type="number" name="pages" id="page-input" value="0">
+            <div>
+                <label for="read">Already read? :</label>
+                <input type="checkbox" name="read" id="read-input">
+            </div>
+            <button id="submit" type="button">Add!</button>
+            
+        </form>
+    </div>
+
+    <div class="footer">
+        <div>Created by gitesh-singla</div>
+        <a href="https://github.com/gitesh-singla" target="_blank"><img src="./github-mark.png" class="github-mark"></a>
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

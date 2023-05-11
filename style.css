@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: rgba(140, 160, 160 , 0.3);
+
+    position: fixed;
+    top: 0px;
+    display: flex;
+    width: 100%;
+    z-index: 10;
+
+    height: 5rem;
+    font-size: 3rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+.book-icon{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1rem;
+}
+
+.main{
+    margin: 5rem  6%;
+    padding: 2rem;
+    /* background-color: rgba(199, 222, 151, 0.3); */
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 18rem);
+    gap: 2rem;
+}
+
+.add {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    font-size: 2rem;
+    padding: 0 0.6rem;
+    border-radius: 2rem;
+    border: solid 2px grey;
+    scale: 1.2;
+}
+
+.footer{
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 3rem;
+    z-index: 10;
+}
+
+.github-mark{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.Book{
+    background-color: rgba(140, 160, 160 , 0.3);
+    width: 18rem;
+    height: 16rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Book > .title{
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-bottom: solid 2px black;
+}
+
+.Book > .author , .pages {
+    font-size: 1.2rem;
+}
+
+.toolbar{
+    display: flex;
+    justify-items: center;
+    gap: 1rem;
+}
+
+button {
+    transition: 0.05s;
+}
+button:hover {
+    scale: 0.95;
+    background-color: white;
+}
+button:active {
+    scale: 0.9;
+}
+
+.toolbar > button {
+    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    border: solid 2px grey;
+}
+
+.toolbar > .deleteBtn{
+    background-color: rgba(215, 22, 22, 0.702);
+}
+
+.toolbar > .read {
+    background-color: rgba(64, 202, 69, 0.805);
+}
+
+.addForm {
+    display: none;
+    width: 20rem;
+    text-align: center;
+    box-sizing: border-box;
+    border: solid 2px black;
+    border-radius: 1rem;
+    position: fixed;
+    top: 20%;
+    left: calc(50% - 10rem);
+    z-index: 100;
+    background-color: white;
+}
+
+.addForm > div {
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: rgba(140, 160, 160 , 0.3);
+    border-radius: 1rem 1rem 0 0;
+    
+}
+
+.addForm > form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+.addForm > form > input , #submit {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    color: rgb(69, 69, 69);
+    border: solid 2px rgba(128, 128, 128, 0.8);
+    border-radius: 0.5rem;
+    background-color: rgba(140, 160, 160 , 0.3);
+}
+
+.addForm > form > input:focus{
+    outline: none;
+}
+
+.overlay {
+    display: none;
+    background-color: black;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+}
+
+
+
+
+
+
+
+
